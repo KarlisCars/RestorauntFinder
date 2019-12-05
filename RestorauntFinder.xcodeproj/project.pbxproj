@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		BCBDA5222399475200398BB9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBDA5212399475200398BB9 /* AppDelegate.swift */; };
 		BCBDA5242399475200398BB9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBDA5232399475200398BB9 /* SceneDelegate.swift */; };
-		BCBDA5262399475200398BB9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBDA5252399475200398BB9 /* ViewController.swift */; };
+		BCBDA5262399475200398BB9 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBDA5252399475200398BB9 /* TableViewController.swift */; };
 		BCBDA5292399475200398BB9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCBDA5272399475200398BB9 /* Main.storyboard */; };
 		BCBDA52B2399475700398BB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCBDA52A2399475700398BB9 /* Assets.xcassets */; };
 		BCBDA52E2399475700398BB9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCBDA52C2399475700398BB9 /* LaunchScreen.storyboard */; };
+		BCBDA5362399499C00398BB9 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBDA5352399499C00398BB9 /* MapViewController.swift */; };
+		BCBDA53C23994B6100398BB9 /* LocationControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBDA53B23994B6100398BB9 /* LocationControllers.swift */; };
+		BCBDA53F23994C0F00398BB9 /* Restoraunt.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBDA53E23994C0F00398BB9 /* Restoraunt.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BCBDA51E2399475200398BB9 /* RestorauntFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RestorauntFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCBDA5212399475200398BB9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BCBDA5232399475200398BB9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BCBDA5252399475200398BB9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BCBDA5252399475200398BB9 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		BCBDA5282399475200398BB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BCBDA52A2399475700398BB9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BCBDA52D2399475700398BB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BCBDA52F2399475700398BB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCBDA5352399499C00398BB9 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		BCBDA53B23994B6100398BB9 /* LocationControllers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationControllers.swift; sourceTree = "<group>"; };
+		BCBDA53E23994C0F00398BB9 /* Restoraunt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restoraunt.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,58 @@
 		BCBDA5202399475200398BB9 /* RestorauntFinder */ = {
 			isa = PBXGroup;
 			children = (
-				BCBDA5212399475200398BB9 /* AppDelegate.swift */,
-				BCBDA5232399475200398BB9 /* SceneDelegate.swift */,
-				BCBDA5252399475200398BB9 /* ViewController.swift */,
-				BCBDA5272399475200398BB9 /* Main.storyboard */,
+				BCBDA53D23994BE700398BB9 /* Model */,
+				BCBDA53A23994B4300398BB9 /* Helper */,
+				BCBDA538239949E600398BB9 /* Delegates */,
+				BCBDA537239949D500398BB9 /* Controllers */,
 				BCBDA52A2399475700398BB9 /* Assets.xcassets */,
-				BCBDA52C2399475700398BB9 /* LaunchScreen.storyboard */,
+				BCBDA539239949F600398BB9 /* Storyboard */,
 				BCBDA52F2399475700398BB9 /* Info.plist */,
 			);
 			path = RestorauntFinder;
+			sourceTree = "<group>";
+		};
+		BCBDA537239949D500398BB9 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				BCBDA5352399499C00398BB9 /* MapViewController.swift */,
+				BCBDA5252399475200398BB9 /* TableViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		BCBDA538239949E600398BB9 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				BCBDA5212399475200398BB9 /* AppDelegate.swift */,
+				BCBDA5232399475200398BB9 /* SceneDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		BCBDA539239949F600398BB9 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				BCBDA5272399475200398BB9 /* Main.storyboard */,
+				BCBDA52C2399475700398BB9 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		BCBDA53A23994B4300398BB9 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				BCBDA53B23994B6100398BB9 /* LocationControllers.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		BCBDA53D23994BE700398BB9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BCBDA53E23994C0F00398BB9 /* Restoraunt.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +187,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BCBDA5262399475200398BB9 /* ViewController.swift in Sources */,
+				BCBDA53C23994B6100398BB9 /* LocationControllers.swift in Sources */,
+				BCBDA5262399475200398BB9 /* TableViewController.swift in Sources */,
+				BCBDA53F23994C0F00398BB9 /* Restoraunt.swift in Sources */,
 				BCBDA5222399475200398BB9 /* AppDelegate.swift in Sources */,
 				BCBDA5242399475200398BB9 /* SceneDelegate.swift in Sources */,
+				BCBDA5362399499C00398BB9 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
